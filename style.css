@@ -10,7 +10,7 @@ body{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto auto auto;
-    padding: 10px;
+    padding: 20px 5px 10px 5px;
 }
 
 .navbar{
@@ -83,7 +83,7 @@ input{
 }
 
 .ikoner i{
-    padding: 1px;
+    padding: 1px 6px;
 }
 
 
@@ -112,17 +112,17 @@ input{
 
     #grid-container{
         display: grid;
-        grid-template-columns: auto 3fr auto ;
+        grid-template-columns: 150px auto 150px;
         grid-template-rows: auto auto auto auto auto auto;
         padding: 10px;
     }
 
     .navbar{
-        grid-column: 3/4;
+        grid-column: 2/3;
         grid-row: 1/2;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         /*justify-content: center;*/ 
         align-items: center;
     }
@@ -132,7 +132,7 @@ input{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 5px;
     }
 
     .navbar li a{
@@ -170,14 +170,22 @@ input{
     .meny{
         display: flex;
         flex-direction: row;
-        padding: 10px;
+        padding: 1px;
+    }
+
+    .meny a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2px;
+        padding: 2px;
     }
 
     #logo{
         font-weight: 900;
         /*text-transform: uppercase;*/
         font-size: 40px;
-        margin: 5px 0px 0px 0px;
+        margin: 0;
     }
 
     .ikoner{
@@ -190,12 +198,12 @@ input{
     }
 
     main{
-        grid-column: 3/4;
+        grid-column: 2/3;
         grid-row: 4/5;
     }
 
     footer{
-        grid-column: 3/4;
+        grid-column: 2/3;
         grid-row: 5/6;
     }
 }
