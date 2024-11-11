@@ -10,7 +10,7 @@ body{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto auto auto;
-    padding: 20px 5px 10px 5px;
+    padding: 20px 0px 10px 0px; 
 }
 
 .navbar{
@@ -42,11 +42,11 @@ body{
     justify-content: space-between;
     color: black;
     border-radius: 20px;
-    border: 2px solid black;
+    border: 1px solid black;
     outline: none;
     background-color: #fff;
-    height: 35px;
-    width: 250px;
+    height: 32px;
+    width: 225px;
     padding: 5px 15px 5px 15px;
 }
 
@@ -54,6 +54,7 @@ input{
     border-radius: 20px;
     border: none;
     outline: none;
+    padding: 0;
 }
 
 .meny{
@@ -86,9 +87,62 @@ input{
     padding: 1px 6px;
 }
 
+#banner{
+    background-image: url("https://picsum.photos/id/44/200/300");
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    position:relative;
+    height: 32rem;
+    border-radius: 19px;
+    padding: 35px;
+    margin: 5px;
+}
 
+.banner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+    width: 140px;
+    padding: 0;
+    margin: 0;
+}
 
+.banner-container-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
+    margin: 5px;
+}
 
+#banner-overskrift{
+    font-size: 28px;
+    margin: 15px 5px; 
+}
+
+#banner-ingress{
+    font-size: 12px;
+}
+
+#les-mer{
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    border-radius: 42px;
+    padding: 11px;
+    width: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+footer{
+    font-size: 14px;
+}
 
 
 
@@ -125,6 +179,7 @@ input{
         justify-content: space-between;
         /*justify-content: center;*/ 
         align-items: center;
+        margin: 10px 0px 0px;;
     }
 
     .navbar li{
@@ -149,10 +204,10 @@ input{
         justify-content: space-between;
         color: black;
         border-radius: 20px;
-        border: 2px solid black;
+        border: 1px solid black;
         outline: none;
         background-color: #fff;
-        height: 35px;
+        height: 32px;
         width: 250px;
         padding: 5px 15px 5px 15px;
     }
@@ -165,6 +220,7 @@ input{
         border-radius: 20px;
         border: none;
         outline: none;
+        padding: 0;
     }
 
     .meny{
@@ -190,7 +246,7 @@ input{
 
     .ikoner{
         padding: 5px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .ikoner i{
@@ -200,6 +256,33 @@ input{
     main{
         grid-column: 2/3;
         grid-row: 4/5;
+    }
+
+    #banner{
+        display: flex;
+        height: 450px;
+        margin: 25px 0px 0px;;
+
+    }
+
+    .banner-container{
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        width: 400px;
+        padding: 0;
+        margin: 0;
+    }
+
+    
+    .banner-container-item{
+        margin: 10px;
+    }
+    
+    #banner-overskrift{
+        font-size: 28px;
+        font-weight: bold;
+
     }
 
     footer{
