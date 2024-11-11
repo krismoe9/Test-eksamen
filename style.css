@@ -293,11 +293,16 @@ footer{
         margin: 10px;
     }
     
-    #banner-overskrift{
-        font-size: 28px;
+    #banner-title{
+        font-size: 34px;
         font-weight: bold;
 
     }
+
+
+#banner-info{
+    font-size: 15px;
+}
 
     .popular-container{
         display: grid;
@@ -398,7 +403,7 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0px;
+        padding: 0px 3px;
         margin: 0;
     }
 
@@ -412,7 +417,7 @@ footer{
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 0;
+        padding: 0px 3px;
     }
 
     .review p{
