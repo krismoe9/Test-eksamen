@@ -9,7 +9,7 @@ body{
 #grid-container{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-rows: (7, auto);
     padding: 20px 0px 10px 0px; 
 }
 
@@ -72,7 +72,6 @@ input{
 
 #logo{
     font-weight: 900;
-    /*text-transform: uppercase;*/
     font-size: 30px;
     margin: 10px 0px 10px 0px;
 }
@@ -141,14 +140,118 @@ input{
 }
 
 .popular-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 0.1fr 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+
 
 #popular-title{
-
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    margin: 13px 0px 0px 0px;
+    text-align: center;
 }
 
-#popular-info{
+#popular-undertitle{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: lighter;
+}
 
+.btn{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 25px 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.knapp{
+    display: inline;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(52, 52, 52);
+    border-radius: 43px;
+    padding: 15px;
+    width: 100px;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.popular-productcard1{
+    grid-row: 4/5;
+    margin: 0px 0px 10px 0px;
+}
+
+.popular-productcard2{
+    grid-row: 5/6;
+    margin: 0px 0px 10px 0px;
+}
+
+.popular-productcard3{
+    grid-row: 6/7;
+    margin: 0px 0px 10px 0px;
+}
+
+.popular-productcard4{
+    grid-row: 7/8;
+    margin: 0px 0px 10px 0px;
+}
+
+.popular-productcard5{
+    grid-row: 8/9;
+    margin: 0px 0px 10px 0px;
+}
+
+.popular-productcard6{
+    grid-row: 9/10;
+    margin: 0px 0px 10px 0px;
+}
+
+.product-photo{
+    border-radius: 42px;
+    width: 100%;
+    margin: 0px 0px 1px 0px;
+}
+
+.product-description{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3px;
+    margin: 0;
+}
+
+.product-name{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.review{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 3px;
+}
+
+.review p{
+    margin: 0px;
+    padding: 0px 7px;
+    font-weight: bold;
 }
 
 
@@ -164,7 +267,7 @@ footer{
 
 
 
-
+/* ------------------------------------------------ DESKTOP---------------------------------------------------------*/
 
 
     @media only screen and (min-width: 600px){
@@ -300,9 +403,9 @@ footer{
     }
 
 
-#banner-info{
+    #banner-info{
     font-size: 15px;
-}
+    }
 
     .popular-container{
         display: grid;
