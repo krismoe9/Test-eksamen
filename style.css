@@ -117,12 +117,12 @@ input{
     margin: 5px;
 }
 
-#banner-overskrift{
+#banner-title{
     font-size: 28px;
     margin: 15px 5px; 
 }
 
-#banner-ingress{
+#banner-info{
     font-size: 12px;
 }
 
@@ -139,6 +139,19 @@ input{
     font-weight: bold;
     font-size: 10px;
 }
+
+.popular-container{
+}
+
+#popular-title{
+
+}
+
+#popular-info{
+
+}
+
+
 
 footer{
     font-size: 14px;
@@ -261,7 +274,8 @@ footer{
     #banner{
         display: flex;
         height: 450px;
-        margin: 25px 0px 0px;;
+        margin: 25px 0px 0px;
+        border-radius: 30px;
 
     }
 
@@ -283,6 +297,128 @@ footer{
         font-size: 28px;
         font-weight: bold;
 
+    }
+
+    .popular-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.25fr 0.1fr 0.25fr 1fr 1fr;
+        gap: 15px;
+    }
+    
+
+    #popular-title{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        font-size: 40px;
+        margin: 13px 0px 0px 0px;
+    }
+    
+    #popular-undertitle{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: lighter;
+    }
+
+    .btn{
+        grid-column: 1/4;
+        grid-row: 3/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0px 25px 0px;
+        list-style: none;
+    }
+
+    .knapp{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(52, 52, 52);
+        border-radius: 43px;
+        padding: 15px;
+        width: 150px;
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    .popular-productcard1{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin: 0px 0px 10px 0px;
+    }
+    
+    .popular-productcard2{
+        grid-column: 2/3;
+        grid-row: 4/5;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .popular-productcard3{
+        grid-column: 3/4;
+        grid-row: 4/5;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .popular-productcard4{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .popular-productcard5{
+        grid-column: 2/3;
+        grid-row: 5/6;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .popular-productcard6{
+        grid-column: 3/4;
+        grid-row: 5/6;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .product-photo{
+        border-radius: 42px;
+        width: 100%;
+        margin: 0px 0px 1px 0px;
+    }
+
+    .product-description{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        margin: 0;
+    }
+
+    .product-name{
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .review{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+
+    .review p{
+        margin: 0px;
+        padding: 0px 7px;
+        font-weight: bold;
     }
 
     footer{
