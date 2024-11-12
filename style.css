@@ -92,6 +92,15 @@ input{
     }
 }
 
+.grow { 
+    transition: all .2s ease-in-out; /*2s er hastigheten på overgangen*/
+  }
+
+
+.grow:hover { 
+    transform: scale(1.2); /*1 betyr nåværende størrelse, så den vokser x0.1*/
+  }
+
 
 
 
@@ -153,6 +162,7 @@ input{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.25fr 0.1fr 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
 }
 
 
@@ -203,6 +213,29 @@ input{
     grid-row: 4/5;
     margin: 0px 0px 10px 0px;
     padding: 5px;
+
+    a{
+        position: relative;
+
+        i{
+            position: absolute;
+            z-index: 10;
+            color: #ffffff;
+            left: 330px;
+            bottom: 330px;
+            font-size: 21px;
+            padding: 20px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            height: 27px;
+            width: 27px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
 }
 
 .popular-productcard2{
@@ -210,36 +243,157 @@ input{
     margin: 0px 0px 10px 0px;
     padding: 5px;
     padding: 5px;
+
+    a{
+        position: relative;
+
+        i{
+            position: absolute;
+            z-index: 10;
+            color: #ffffff;
+            left: 330px;
+            bottom: 330px;
+            font-size: 21px;
+            padding: 20px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            height: 27px;
+            width: 27px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
 }
 
 .popular-productcard3{
     grid-row: 6/7;
     margin: 0px 0px 10px 0px;
     padding: 5px;
+
+    a{
+        position: relative;
+
+        i{
+            position: absolute;
+            z-index: 10;
+            color: #ffffff;
+            left: 330px;
+            bottom: 330px;
+            font-size: 21px;
+            padding: 20px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            height: 27px;
+            width: 27px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
 }
 
 .popular-productcard4{
     grid-row: 7/8;
     margin: 0px 0px 10px 0px;
     padding: 5px;
+
+    a{
+        position: relative;
+
+        i{
+            position: absolute;
+            z-index: 10;
+            color: #ffffff;
+            left: 330px;
+            bottom: 330px;
+            font-size: 21px;
+            padding: 20px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            height: 27px;
+            width: 27px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
 }
 
 .popular-productcard5{
     grid-row: 8/9;
     margin: 0px 0px 10px 0px;
     padding: 5px;
+
+    a{
+        position: relative;
+
+        i{
+            position: absolute;
+            z-index: 10;
+            color: #ffffff;
+            left: 330px;
+            bottom: 330px;
+            font-size: 21px;
+            padding: 20px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            height: 27px;
+            width: 27px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
 }
 
 .popular-productcard6{
     grid-row: 9/10;
     margin: 0px 0px 10px 0px;
     padding: 5px;
+
+    a{
+        position: relative;
+
+        i{
+            position: absolute;
+            z-index: 10;
+            color: #ffffff;
+            left: 330px;
+            bottom: 330px;
+            font-size: 21px;
+            padding: 20px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            height: 27px;
+            width: 27px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
 }
+
+.like-icon:hover{
+    background-color: rgba(171, 0, 0, 0.4);
+}
+
 
 .product-photo{
     border-radius: 42px;
     width: 100%;
     margin: 0px 0px 1px 0px;
+    
 }
 
 .product-description{
@@ -583,21 +737,6 @@ footer{
         }
     }
 
-    /*
-    .navbar li{
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5px;
-    }
-
-    .navbar li a{
-        text-decoration: none;
-        list-style: none;
-        color: black;
-        font-size: 18px;
-    }*/
 
     .search{
         display: flex;
@@ -1040,8 +1179,6 @@ footer{
     .list-details{
         font-weight: bold;
     }
-
-
 
     .footer-list2{
         padding: 1px;
