@@ -36,21 +36,6 @@ body{
     }
 }
 
-/*
-.navbar li{
-    text-decoration: none;
-    list-style: none;
-    color: black;
-    font-size: 18px;
-    margin: 5px;
-}
-
-.navbar li a{
-    text-decoration: none;
-    list-style: none;
-    color: black;
-    font-size: 18px;
-} */
 
 .search{
     display: flex;
@@ -84,14 +69,17 @@ input{
         align-items: center;
         margin: 5px;
         padding: 5px;
+        text-decoration: none;
     }
 }
  
 
-#logo{
+.logo{
     font-weight: 900;
     font-size: 30px;
     margin: 10px 0px 10px 0px;
+    text-decoration: none;
+    color: black;
 }
 
 .ikoner{
@@ -470,12 +458,14 @@ input{
 
 footer{
     border-top: 1px solid rgb(211, 211, 211);
+    padding: 15px 0px;
 }
 
-.footer{
+.footer-container{
     font-size: 14px;
-    margin: 10px 2px;
+    margin: 15px 2px;
     display: flex;
+    flex-wrap: wrap;
 
     a{
         text-decoration: none;
@@ -522,6 +512,24 @@ footer{
         align-items: center;
     }
 }
+
+.footer-list3{
+    padding: 0px;
+
+    i{
+        margin: 5px 15px 0px 0px;
+        font-size: 15px;
+    }
+}
+
+.so-me-h4{
+    font-weight: lighter;
+    font-size: 18px;
+    margin: 7px 0px;
+}
+
+
+
 
 
 
@@ -994,6 +1002,77 @@ footer{
     footer{
         grid-column: 2/3;
         grid-row: 3/4;
+        border-top: 1px solid rgb(211, 211, 211);
+        padding: 15px 0px;
 
     }
+
+    .footer-container{
+        font-size: 14px;
+        margin: 15px 2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .footer-list1{
+        padding: 1px;
+
+        p{
+            margin: 4px 4px;
+            padding: 0px 2px;
+        }
+
+        li{
+            list-style: none;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    .list-details{
+        font-weight: bold;
+    }
+
+
+
+    .footer-list2{
+        padding: 1px;
+
+        p{
+            margin: 4px 4px;
+            padding: 0px 2px;
+        }
+
+        li{
+            list-style: none;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    .footer-list3{
+        padding: 0px;
+
+        i{
+            margin: 5px 15px 0px 0px;
+            font-size: 15px;
+        }
+    }
+
+    .so-me-h4{
+        font-weight: lighter;
+        font-size: 18px;
+        margin: 7px 0px;
+    }
+
 }
