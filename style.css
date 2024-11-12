@@ -1,3 +1,8 @@
+/*
+Desktop
+Border radius: 20px;
+*/
+
 *{
     box-sizing: border-box;
 }
@@ -20,20 +25,22 @@ body{
     flex-direction: column;
     align-items: center;
 
+    
     li{
         text-decoration: none;
         list-style: none;
         color: black;
         font-size: 18px;
         margin: 5px;
-
-        a{
-            text-decoration: none;
-            list-style: none;
-            color: black;
-            font-size: 18px;
-        }
     }
+}
+
+.nav-info{
+
+    list-style: none;
+    color: black;
+    font-size: 18px;
+
 }
 
 
@@ -76,28 +83,30 @@ input{
 
 .logo{
     font-weight: 900;
-    font-size: 30px;
+    font-size: 40px;
     margin: 10px 0px 10px 0px;
     text-decoration: none;
     color: black;
+    margin: 0;
 }
 
 .ikoner{
     padding: 5px;
     margin: 5px;
     font-size: 20px;
+    color: black;
 
     i{
         padding: 1px 6px;
     }
 }
 
-.grow { 
+.hover-grow { 
     transition: all .2s ease-in-out; /*2s er hastigheten på overgangen*/
   }
 
 
-.grow:hover { 
+.hover-grow:hover { 
     transform: scale(1.2); /*1 betyr nåværende størrelse, så den vokser x0.1*/
   }
 
@@ -111,7 +120,7 @@ input{
     justify-content: flex-end;
     position:relative;
     height: 32rem;
-    border-radius: 19px;
+    border-radius: 20px;
     padding: 35px;
     margin: 5px;
 }
@@ -162,7 +171,6 @@ input{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.25fr 0.1fr 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    
 }
 
 
@@ -198,15 +206,21 @@ input{
 }
 
 .knapp{
-    display: inline;
+    display: flex;
+    justify-content: center;
     text-decoration: none;
-    color: white;
-    background-color: rgb(52, 52, 52);
+    color: rgb(0, 0, 0);
+    background-color: white;
     border-radius: 43px;
-    padding: 15px;
-    width: 100px;
+    border: 1px solid black;
+    padding: 9px;
+    width: 110px;
     font-size: 15px;
     margin: 5px;
+}
+
+.hover-grey:hover{
+    background-color: rgba(123, 123, 123, 0.4);
 }
 
 .popular-productcard1{
@@ -214,28 +228,26 @@ input{
     margin: 0px 0px 10px 0px;
     padding: 5px;
 
-    a{
-        position: relative;
+    position: relative;
 
-        i{
-            position: absolute;
-            z-index: 10;
-            color: #ffffff;
-            left: 330px;
-            bottom: 330px;
-            font-size: 21px;
-            padding: 20px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.5);
-            height: 27px;
-            width: 27px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    .heart{
+        position: absolute;
+        z-index: 10;
+        color: #ffffff;
+        top: 4.5%;
+        right: 5.5%;
+        font-size: 21px;
+        padding: 20px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 27px;
+        width: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         }
-    }
+
 }
 
 .popular-productcard2{
@@ -244,28 +256,26 @@ input{
     padding: 5px;
     padding: 5px;
 
-    a{
-        position: relative;
+    position: relative;
 
-        i{
-            position: absolute;
-            z-index: 10;
-            color: #ffffff;
-            left: 330px;
-            bottom: 330px;
-            font-size: 21px;
-            padding: 20px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.5);
-            height: 27px;
-            width: 27px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    .heart{
+        position: absolute;
+        z-index: 10;
+        color: #ffffff;
+        top: 4.5%;
+        right: 5.5%;
+        font-size: 21px;
+        padding: 20px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 27px;
+        width: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         }
-    }
+
 }
 
 .popular-productcard3{
@@ -273,28 +283,26 @@ input{
     margin: 0px 0px 10px 0px;
     padding: 5px;
 
-    a{
-        position: relative;
+    position: relative;
 
-        i{
-            position: absolute;
-            z-index: 10;
-            color: #ffffff;
-            left: 330px;
-            bottom: 330px;
-            font-size: 21px;
-            padding: 20px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.5);
-            height: 27px;
-            width: 27px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    .heart{
+        position: absolute;
+        z-index: 10;
+        color: #ffffff;
+        top: 4.5%;
+        right: 5.5%;
+        font-size: 21px;
+        padding: 20px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 27px;
+        width: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         }
-    }
+
 }
 
 .popular-productcard4{
@@ -302,28 +310,26 @@ input{
     margin: 0px 0px 10px 0px;
     padding: 5px;
 
-    a{
-        position: relative;
+    position: relative;
 
-        i{
-            position: absolute;
-            z-index: 10;
-            color: #ffffff;
-            left: 330px;
-            bottom: 330px;
-            font-size: 21px;
-            padding: 20px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.5);
-            height: 27px;
-            width: 27px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    .heart{
+        position: absolute;
+        z-index: 10;
+        color: #ffffff;
+        top: 4.5%;
+        right: 5.5%;
+        font-size: 21px;
+        padding: 20px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 27px;
+        width: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         }
-    }
+
 }
 
 .popular-productcard5{
@@ -331,28 +337,26 @@ input{
     margin: 0px 0px 10px 0px;
     padding: 5px;
 
-    a{
-        position: relative;
+    position: relative;
 
-        i{
-            position: absolute;
-            z-index: 10;
-            color: #ffffff;
-            left: 330px;
-            bottom: 330px;
-            font-size: 21px;
-            padding: 20px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.5);
-            height: 27px;
-            width: 27px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    .heart{
+        position: absolute;
+        z-index: 10;
+        color: #ffffff;
+        top: 4.5%;
+        right: 5.5%;
+        font-size: 21px;
+        padding: 20px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 27px;
+        width: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         }
-    }
+
 }
 
 .popular-productcard6{
@@ -360,37 +364,35 @@ input{
     margin: 0px 0px 10px 0px;
     padding: 5px;
 
-    a{
-        position: relative;
+    position: relative;
 
-        i{
-            position: absolute;
-            z-index: 10;
-            color: #ffffff;
-            left: 330px;
-            bottom: 330px;
-            font-size: 21px;
-            padding: 20px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.5);
-            height: 27px;
-            width: 27px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    .heart{
+        position: absolute;
+        z-index: 10;
+        color: #ffffff;
+        top: 4.5%;
+        right: 5.5%;
+        font-size: 21px;
+        padding: 20px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 27px;
+        width: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         }
-    }
+
 }
 
-.like-icon:hover{
+.hover-red:hover{
     background-color: rgba(171, 0, 0, 0.4);
 }
 
 
 .product-photo{
-    border-radius: 42px;
+    border-radius: 20px;
     width: 100%;
     margin: 0px 0px 1px 0px;
     
@@ -481,7 +483,7 @@ input{
     background-image: url("https://picsum.photos/id/12/500/500");
     width: 100%;
     height: auto;
-    border-radius: 19px;
+    border-radius: 20px;
     display: grid;
 
     h5{
@@ -500,7 +502,7 @@ input{
     background-image: url("https://picsum.photos/id/13/500/500");
     width: 100%;
     height: auto;
-    border-radius: 19px;
+    border-radius: 20px;
     display: grid;
 
     h5{
@@ -519,7 +521,7 @@ input{
     background-image: url("https://picsum.photos/id/14/800/800");
     width: 100%;
     height: auto;
-    border-radius: 19px;
+    border-radius: 20px;
     display: grid;
 
     h5{
@@ -538,7 +540,7 @@ input{
     background-image: url("https://picsum.photos/id/15/600/600");
     width: 100%;
     height: auto;
-    border-radius: 19px;
+    border-radius: 20px;
     display: grid;
     padding: 5px;
 
@@ -579,7 +581,7 @@ input{
     min-width: 285px;
     height: auto;
     border: 1px solid rgb(234, 234, 234);
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 15px;
     white-space: wrap;
 
@@ -692,6 +694,13 @@ footer{
 
 
 /* ------------------------------------------------ DESKTOP---------------------------------------------------------*/
+     
+/*
+Desktop
+Border radius: 25px;
+*/
+
+
 
 
     @media only screen and (min-width: 600px){
@@ -728,12 +737,6 @@ footer{
             align-items: center;
             padding: 5px;
 
-            a{
-                text-decoration: none;
-                list-style: none;
-                color: black;
-                font-size: 18px;
-            }
         }
     }
 
@@ -752,10 +755,6 @@ footer{
         width: 250px;
         padding: 5px 15px 5px 15px;
     }
-
-    /*.fa-search{
-        justify-content: flex-end;
-    }*/
 
     input{
         border-radius: 20px;
@@ -778,22 +777,6 @@ footer{
         }
     }
 
-    /*
-    .meny a{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 2px;
-        padding: 2px;
-    }*/
-
-    #logo{
-        font-weight: 900;
-        /*text-transform: uppercase;*/
-        font-size: 40px;
-        margin: 0;
-    }
-
     .ikoner{
         padding: 5px;
         font-size: 20px;
@@ -812,7 +795,7 @@ footer{
         display: flex;
         height: 450px;
         margin: 25px 0px 0px;
-        border-radius: 30px;
+        border-radius: 25px;
 
     }
 
@@ -883,9 +866,10 @@ footer{
         display: flex;
         justify-content: center;
         text-decoration: none;
-        color: white;
-        background-color: rgb(52, 52, 52);
+        color: rgb(0, 0, 0);
+        background-color: white;
         border-radius: 43px;
+        border: 1px solid black;
         padding: 15px;
         width: 150px;
         font-size: 15px;
@@ -928,8 +912,9 @@ footer{
         margin: 0px 0px 10px 0px;
     }
 
+    
     .product-photo{
-        border-radius: 42px;
+        border-radius: 25px;
         width: 100%;
         margin: 0px 0px 1px 0px;
     }
@@ -1004,7 +989,7 @@ footer{
         background-image: url("https://picsum.photos/id/11/400/400");
         width: 100%;
         height: 100%;
-        border-radius: 19px;
+        border-radius: 25px;
         display: grid;
 
         h5{
@@ -1020,7 +1005,7 @@ footer{
         background-image: url("https://picsum.photos/id/12/500/500");
         width: 100%;
         height: 100%;
-        border-radius: 19px;
+        border-radius: 25px;
         display: grid;
 
         h5{
@@ -1036,7 +1021,7 @@ footer{
         background-image: url("https://picsum.photos/id/13/500/500");
         width: 100%;
         height: 100%;
-        border-radius: 19px;
+        border-radius: 25px;
         display: grid;
 
         h5{
@@ -1052,7 +1037,7 @@ footer{
         background-image: url("https://picsum.photos/id/14/800/800");
         width: 100%;
         height: 100%;
-        border-radius: 19px;
+        border-radius: 25px;
         display: grid;
 
         h5{
@@ -1068,7 +1053,7 @@ footer{
         background-image: url("https://picsum.photos/id/15/600/600");
         width: 100%;
         height: 100%;
-        border-radius: 19px;
+        border-radius: 25px;
         display: grid;
 
         h5{
