@@ -27,16 +27,20 @@ body{
 
     
     li{
+        justify-content: space-evenly;
         text-decoration: none;
         list-style: none;
         color: black;
         font-size: 18px;
-        margin: 5px;
+        margin: 0px;
+    }
+
+    a{
+        color: black;
     }
 }
 
 .nav-info{
-
     list-style: none;
     color: black;
     font-size: 18px;
@@ -101,8 +105,10 @@ input{
     }
 }
 
+
+/* NB! Hover vil ikke aktiveres på mobilskjermer! */
 .hover-grow { 
-    transition: all .2s ease-in-out; /*2s er hastigheten på overgangen*/
+    transition: all .2s ease-in-out; /* 2s er hastigheten på overgangen*/
   }
 
 
@@ -785,6 +791,15 @@ Border radius: 25px;
             padding: 1px;
         }
     }
+
+    .hover-grow { 
+        transition: all .2s ease-in-out; /*2s er hastigheten på overgangen*/
+      }
+    
+    
+    .hover-grow:hover { 
+        transform: scale(1.2); /*1 betyr nåværende størrelse, så den vokser x0.1*/
+      }
 
     main{
         grid-column: 2/3;
