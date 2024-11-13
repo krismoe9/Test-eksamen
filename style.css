@@ -829,7 +829,7 @@ Border radius: 25px;
     /*Setter minmax for å ikke overskride 1200px som står i eksamensteksten*/
     #grid-container{
         display: grid;
-        grid-template-columns: 1fr minmax(auto, 1200px) 1fr; 
+        grid-template-columns: 1fr minmax(600px, 1200px) 1fr; 
         grid-template-rows: auto auto auto;
         padding: 10px;
     }
@@ -1246,4 +1246,9 @@ Border radius: 25px;
     }
 
 
+
+    footer{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
 }
