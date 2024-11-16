@@ -13,33 +13,65 @@
 </head>
 <body>
     <div id="grid-container">
-        <nav class="navbar">
-            <form class="search">
-                <input type="text" placeholder="Søk" alt="søkefelt for profukter">
-                <i class="fas fa-search"></i>
-            </form>
-            <ul class="meny">
-                <li><a href="index.html" class="nav-info">Hjem</a></li>
-                <li><a href="product.html" class="nav-info">Produkter</a></li>
-                <li><a href="index.html" class="logo">Logo</a></li>
-                <li><a href="#category" class="nav-info">Kategorier</a></li>
-                <li><a href="#contact"class="nav-info">Kontakt oss</a></li>
-            </ul>
-            <ul class="ikoner">
-                <a href="index.html"><i class="fa-regular fa-user fas hover-grow"></i></a>
-                <a href="#"><i class="fa-regular fa-heart fas hover-grow"></i></a>
-                <a href="checkout.html"><i class="fa-solid fa-cart-shopping fas hover-grow"></i></a>
-            </ul>
-        </nav>
-        <main>
+        <header>
+            <nav class="navbar">
+                <form class="search">
+                    <input type="search" placeholder="Søk">
+                    <i class="fas fa-search"></i>
+                </form>
+                <ul class="meny">
+                    <li><a href="index.html" class="nav-info">Hjem</a></li>
+                    <li><a href="product.html" class="nav-info">Produkter</a></li>
+                    <li><a href="index.html" class="logo">Logo</a></li>
+                    <li><a href="#category" class="nav-info">Kategorier</a></li>
+                    <li><a href="#contact" class="nav-info">Kontakt oss</a></li>
+                </ul>
+                <ul class="ikoner">
+                    <li><a href="index.html"><i class="fa-regular fa-user fas hover-grow"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-heart fas hover-grow"></i></a></li>
+                    <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping fas hover-grow"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-product">
+            <div id="product-page-container">
+                <nav  class="breadcrumb" aria-label="breadcrumb">
+                    <ul class="breadcrumb-ul">
+                        <li><a href="index.html">Hjem</a></li>
+                        <li><a href="#category">Kategorier</a></li>
+                        <li>Produktnavn</li> <!-- Nåværende side, ingen lenke -->
+                    </ul>
+                </nav>
+            
+                <section id="product-collage">
+                    <article id="main-pi">
+                        <img src="https://picsum.photos/id/325/200/300" class="product-illustration" alt="bilde av kjole">
+                    </article>
+                    <article id="pi2">
+                        <img src="https://picsum.photos/id/325/125/125" class="product-illustration" alt="bilde av kjole">
+                    </article>
+                    <article id="pi3">
+                        <img src="https://picsum.photos/id/325/125/125" class="product-illustration" alt="bilde av kjole">
+                    </article>
+                    <article id="pi4">
+                        <img src="https://picsum.photos/id/325/125/125" class="product-illustration" alt="bilde av kjole">
+                    </article>
+                </section>
 
+                <aside id="product-info-section">
+                </aside>
+
+                <section id="recomended-scroll">
+                </section>
+            </div>
         </main>
         <footer>
             <div class="footer-container">
                 <section id="section1">
-                    <a href="#" class="logo">Logo</a>
+                    <a href="index.html" class="logo">Logo</a>
                     <p> Temporibus autem quibusdam et aut officiis debitis aut rerum</p>
                 </section>
+
                 <section id="section2">
                 <ul class="footer-list">
                     <li>
@@ -67,6 +99,7 @@
                     </li>
                 </ul>
                 </section>
+
                 <section id="section3">
                     <ul class="footer-list">
                         <li><h4 class="so-me-h4">Snarveier</h4></li>
@@ -75,6 +108,7 @@
                         <li><a href="#contact">Kontakt oss</a></li>
                     </ul>
                 </section>
+
                 <section id="section4">
                   <h4 class="so-me-h4">Sosiale medier</h4>
                     <ul class="footer-list">
