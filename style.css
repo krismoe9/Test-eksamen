@@ -788,7 +788,6 @@ Border radius: 25px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        /*justify-content: center;*/ 
         align-items: center;
         margin: 10px 0px 0px;;
 
@@ -842,6 +841,8 @@ Border radius: 25px;
     .ikoner{
         padding: 5px;
         font-size: 20px;
+        display: flex;
+        flex-direction: row;
 
         i{
             padding: 1px;
