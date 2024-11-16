@@ -741,65 +741,7 @@ footer{
 
 
 
-/*
 
-.footer-container{
-    font-size: 14px;
-    margin: 15px 2px;
-    display: flex;
-    flex-wrap: wrap;
-
-    a{
-        text-decoration: none;
-        color: black;
-    }
-}
-
-.footer-list1{
-    padding: 1px;
-
-
-}
-
-.list-details{
-    font-weight: bold;
-}
-
-
-
-.footer-list2{
-    padding: 1px;
-
-    p{
-        margin: 4px 4px;
-        padding: 0px 2px;
-    }
-
-    li{
-        list-style: none;
-        padding: 2px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-}
-
-.footer-list3{
-    padding: 0px;
-
-    i{
-        margin: 5px 15px 0px 0px;
-        font-size: 15px;
-    }
-}
-
-.so-me-h4{
-    font-weight: lighter;
-    font-size: 18px;
-    margin: 7px 0px;
-}
-
-*/
 
 
 
