@@ -19,11 +19,16 @@ body{
     
 }
 
+header{
+    grid-row: 1/2;
+
+}
+
 .navbar{
-    grid-row:1/2;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 
     
     li{
@@ -95,6 +100,8 @@ input{
 }
 
 .ikoner{
+    display: flex;
+    flex-direction: row;
     padding: 5px;
     margin: 5px;
     font-size: 20px;
@@ -104,6 +111,7 @@ input{
         padding: 1px 6px;
     }
 }
+
 
 
 /* NB! Hover vil ikke aktiveres på mobilskjermer! */
@@ -781,6 +789,13 @@ Border radius: 25px;
         grid-template-rows: auto auto auto;
         padding: 10px;
     }
+    
+    header{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: flex;
+    }
+
 
     .navbar{
         grid-column: 2/3;
@@ -789,7 +804,8 @@ Border radius: 25px;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: 10px 0px 0px;;
+        margin: 10px 0px 0px;
+        width: 100%;
 
         li{
             color: black;
@@ -841,13 +857,13 @@ Border radius: 25px;
     .ikoner{
         padding: 5px;
         font-size: 20px;
-        display: flex;
-        flex-direction: row;
 
         i{
             padding: 1px;
         }
     }
+
+
 
     .hover-grow { 
         transition: all .2s ease-in-out; /*2s er hastigheten på overgangen*/
