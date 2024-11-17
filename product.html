@@ -47,18 +47,52 @@
                     <article id="main-pi">
                         <img src="https://picsum.photos/id/325/200/300" class="product-illustration" alt="bilde av kjole">
                     </article>
+                    <article id="pi1">
+                        <img src="https://picsum.photos/id/325/125/125" class="product-illustration" alt="bilde av kjole">
+                    </article>
                     <article id="pi2">
                         <img src="https://picsum.photos/id/325/125/125" class="product-illustration" alt="bilde av kjole">
                     </article>
                     <article id="pi3">
                         <img src="https://picsum.photos/id/325/125/125" class="product-illustration" alt="bilde av kjole">
                     </article>
-                    <article id="pi4">
-                        <img src="https://picsum.photos/id/325/125/125" class="product-illustration" alt="bilde av kjole">
-                    </article>
                 </section>
 
-                <aside id="product-info-section">
+                <aside id="p-info-section">
+                    <section id="p-s">
+                      <h3 id="p-name">Produktnavn</h3>
+                        <ul id="p-ul">
+                            <li id="p-brand">Merkenavn</li>
+                            <li id="p-price">5 195 kr ink. mva. </li>
+                            <li id="p-color">Farge: beige</li>
+                        </ul>
+                    </section>
+                    <section id="s-f">
+                        <form id="size-form" action="/handle-size" method="post">
+                            <label for="size"></label>
+                             <select id="size" name="size">
+                                <option value="">Velg størrelse</option>
+                                <option value="extra-small">XS</option>
+                                <option value="small">S</option>
+                                <option value="medium">M</option>
+                                <option value="large">L</option>
+                                <option value="extra-large">XL</option>
+                             </select>
+                             <button id="p-btn" type="submit">Legg i handlekurv</button>
+                             <button id="h-btn" type="button"><i class="fa-regular fa-heart h-i"></i></button>
+                        </form>
+                    </section>
+                    <section>
+                        <article class="dropdown1">
+                            <p>Materiale og vedlikehold</p>
+                            <button class="x-btn">+</button>
+                            <ul class="dropdown1-content">
+                                <li>Overmateriale: 95% viskose, 5% estelan</li>
+                                <li>Materiale ermer: 100% polyester</li>
+                                <li>Materiale: Jersey</li>
+                            </ul>
+                        </article>
+                    </section>
                 </aside>
 
                 <section id="recomended-scroll">
