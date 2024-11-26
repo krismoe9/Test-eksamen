@@ -9,7 +9,7 @@
     <link href="ikoner/css/regular.css" rel="stylesheet">
     <link href="ikoner/css/regular.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Produkt</title>
+    <title>Shoppingbagen din</title>
 </head>
 <body>
     <div id="grid-container">
@@ -34,43 +34,116 @@
             </nav>
         </header>
         <main>
-            <article class="cart-card">
-                <img src="https://picsum.photos/290/290" class="c-prod-photo">
-                <ul class="c-prod">
-                    <li><p class="c-name">Product name</p></li>
-                    <li><p class="c-price">Kr 1999</p></li>
-                    <li class="c-color">Farge: <strong>beige</strong></li>
-                </ul>
-                <form class="c-size-form" action="/handle-size" method="post">
-                    <p>Størrelse</p>
-                    <label for="size"></label>
-                     <select class="c-size" name="c-size">
-                        <option value="extra-small">XS</option>
-                        <option value="small">S</option>
-                        <option value="medium">M</option>
-                        <option value="large">L</option>
-                        <option value="extra-large">XL</option>
-                     </select>
-                </form>
-                <ul class="c-ikon">
-                    <li><i class="fa-regular fa-heart"></i></li>
-                    <li><i class="fa-solid fa-trash"></i></li>
-                </ul>
-            </article>
-            <article class="cart-card">
+            <div>
+            <header id="c-header">
+                <a href=# id="back-link"><i class="fa-solid fa-arrow-left"></i> Fortsett å handle</i></a> 
+                <h2>Kasse</h2>
+            </header>
+            <section class="cart-items">
+                <article class="cart-card">
+                    <h3>1. Shoppingbagen din</h3>
+                    <img src="https://picsum.photos/290/290" class="c-prod-photo">
+                        <ul class="c-prod">
+                            <li class="c-name">Product name</li>
+                            <li class="c-price">Kr 1999</li>
+                            <li class="c-color">Farge: <strong>beige</strong></li>
+                        </ul>
+                        <section class="c-options">
+                        <form class="c-size-form" action="/handle-size" method="post">
+                            <label for="size">Størrelse</label>
+                            <select class="c-size" name="c-size">
+                                <option value="extra-small">XS</option>
+                                <option value="small">S</option>
+                                <option value="medium">M</option>
+                                <option value="large">L</option>
+                                <option value="extra-large">XL</option>
+                            </select>
+                        </form>
+                        <form class="c-number" action="/action_page.php">
+                            <label for="quantity">Antall:</label>
+                            <input type="number" id="c-quantity" name="c-quantity" min="1" max="99">
+                        </form>
+                        </section>
+                        <ul class="c-ikon">
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-solid fa-trash"></i></li>
+                        </ul>
+                </article>
 
-            </article>
-            <article class="cart-card">
+                <article class="cart-card">
+                    <img src="https://picsum.photos/290/290" class="c-prod-photo">
+                        <ul class="c-prod">
+                            <li class="c-name">Product name</li>
+                            <li class="c-price">Kr 1999</li>
+                            <li class="c-color">Farge: <strong>beige</strong></li>
+                        </ul>
+                        <section class="c-options">
+                        <form class="c-size-form" action="/handle-size" method="post">
+                            <label for="size">Størrelse</label>
+                            <select class="c-size" name="c-size">
+                                <option value="extra-small">XS</option>
+                                <option value="small">S</option>
+                                <option value="medium">M</option>
+                                <option value="large">L</option>
+                                <option value="extra-large">XL</option>
+                            </select>
+                        </form>
+                        <form class="c-number" action="/action_page.php">
+                            <label for="quantity">Antall:</label>
+                            <input type="number" id="c-quantity" name="c-quantity" min="1" max="99">
+                        </form>
+                        </section>
+                        <ul class="c-ikon">
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-solid fa-trash"></i></li>
+                        </ul>
+                </article>
 
-            </article>
+                <article class="cart-card">
+                    <img src="https://picsum.photos/290/290" class="c-prod-photo">
+                        <ul class="c-prod">
+                            <li class="c-name">Product name</li>
+                            <li class="c-price">Kr 1999</li>
+                            <li class="c-color">Farge: <strong>beige</strong></li>
+                        </ul>
+                        <section class="c-options">
+                        <form class="c-size-form" action="/handle-size" method="post">
+                            <label for="size">Størrelse</label>
+                            <select class="c-size" name="c-size">
+                                <option value="extra-small">XS</option>
+                                <option value="small">S</option>
+                                <option value="medium">M</option>
+                                <option value="large">L</option>
+                                <option value="extra-large">XL</option>
+                            </select>
+                        </form>
+                        <form class="c-number" action="/action_page.php">
+                            <label for="quantity">Antall:</label>
+                            <input type="number" id="c-quantity" name="c-quantity" min="1" max="99">
+                        </form>
+                        </section>
+                        <ul class="c-ikon">
+                            <li><i class="fa-regular fa-heart"></i></li>
+                            <li><i class="fa-solid fa-trash"></i></li>
+                        </ul>
+                </article>
+            </section>
 
 
-            <section>
+            <section class="customer-info">
+
+            </section>
+
+            <section class="delivery-details">
+
+            </section>
+
+            <section class="payment-details">
 
             </section>
 
 
-
+        </div>
         </main>
         <footer>
             <div class="footer-container">
