@@ -45,6 +45,10 @@ header{
 
 }
 
+.nav-info:hover{
+    text-decoration: underline;
+}
+
 .nav-info{
     list-style: none;
     color: black;
@@ -225,7 +229,19 @@ input{
     margin: 5px;
 }
 
-.hover-grey:hover{
+.new-prod{
+    background-color: black;
+    color:#fff;
+    text-decoration: none;
+    border-radius: 43px;
+    border: 1px solid black;
+    padding: 9px;
+    width: 110px;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.knapp:hover{
     background-color: rgba(123, 123, 123, 0.4);
 }
 
@@ -732,7 +748,7 @@ footer{
 
 
 
-/* ---------------------------- PRODUKTSIDE ------------------------------ */
+/* ************************************************************************* PRODUKTSIDE ******************************************************** */
 
 #product-page-container{
     grid-column: 2/3;
@@ -818,6 +834,7 @@ footer{
 
 #p-name{
     margin: 7px 0px;
+    font-size: 30px;
 }
 
 #p-ul{
@@ -836,8 +853,6 @@ footer{
     text-transform: uppercase;
     margin: 10px 0px;
 }
-
-
 
 #s-f{
     margin: 10px 0px;
@@ -958,8 +973,8 @@ table, th, td{
     padding: 20px 0px;
 }
 
-.rec-title{
-    font-size: 35px;
+#rec-title{
+    font-size: 30px;
 }
 
 #rec-link{
@@ -1019,8 +1034,34 @@ table, th, td{
 }
 
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CHECKOUT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
-/* ------------------------------------------------ NETTBRETT --------------------------------------------------------*/
+.cart-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.c-prod{
+    list-style: none;
+    margin: 1px;
+    padding: 1px;
+
+}
+
+.c-size-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-size{
+    width: 55px;
+    height: 40px;
+    border: none;
+    background-color: rgb(160, 160, 160);
+    color:black;
+}
+
+/* ######################################################################### NETTBRETT ##################################################################### */
 
 
 
@@ -1070,6 +1111,18 @@ table, th, td{
         text-decoration: none;
         color: rgb(0, 0, 0);
         background-color: white;
+        border-radius: 43px;
+        border: 1px solid black;
+        padding: 15px;
+        width: 150px;
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    .new-prod{
+        background-color: black;
+        color:#fff;
+        text-decoration: none;
         border-radius: 43px;
         border: 1px solid black;
         padding: 15px;
@@ -1265,7 +1318,7 @@ table, th, td{
 
 
 
-/* ------------------------------------------------ DESKTOP ----------------------------------------------------------*/
+/* §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ DESKTOP §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ */
      
 /*
 Desktop
@@ -1320,10 +1373,6 @@ Border radius: 25px;
             padding: 5px;
 
         }
-    }
-
-    .nav-info:hover{
-        text-decoration: underline;
     }
 
     .search{
@@ -1460,9 +1509,6 @@ Border radius: 25px;
     .knapp{
         display: flex;
         justify-content: center;
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-        background-color: white;
         border-radius: 43px;
         border: 1px solid black;
         padding: 15px;
@@ -1755,7 +1801,7 @@ Border radius: 25px;
         }
     }
 
-    /*********************** PRODUKTSIDE ***********************/
+    /* ************************************************************* PRODUKTSIDE ****************************************************************** */
 
     #product-page-container{
         grid-column: 2/3;
