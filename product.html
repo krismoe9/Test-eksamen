@@ -35,7 +35,7 @@
         </header>
         <main id="main-product">
             <div id="product-page-container">
-                <nav  class="breadcrumb" aria-label="breadcrumb">
+                <nav class="breadcrumb" aria-label="breadcrumb">
                     <ul class="breadcrumb-ul">
                         <li><a href="index.html">Hjem</a></li>
                         <li><a href="#category">Kategorier</a></li>
@@ -83,19 +83,185 @@
                         </form>
                     </section>
                     <section>
-                        <article class="dropdown1">
-                            <p>Materiale og vedlikehold</p>
-                            <button class="x-btn">+</button>
-                            <ul class="dropdown1-content">
+                        <details>
+                            <summary class="m-v">
+                                Materiale og vedlikehold
+                                <button class="x-btn">+</button>
+                            </summary>
+                            <ul class="m-v-ul">
                                 <li>Overmateriale: 95% viskose, 5% estelan</li>
                                 <li>Materiale ermer: 100% polyester</li>
                                 <li>Materiale: Jersey</li>
                             </ul>
-                        </article>
+                        </details>
+                        <details>
+                            <summary class="m-v">
+                                Produktdetaljer
+                                <button class="x-btn">+</button>
+                            </summary>
+                            <ul class="m-v-ul">
+                                <li>Overmateriale: 95% viskose, 5% estelan</li>
+                                <li>Materiale ermer: 100% polyester</li>
+                                <li>Materiale: Jersey</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary class="m-v">
+                                Størrelsetabell
+                                <button class="x-btn">+</button>
+                            </summary>
+                            <ul class="m-v-ul">
+                                <li>Overmateriale: 95% viskose, 5% estelan</li>
+                                <li>Materiale ermer: 100% polyester</li>
+                                <li>Materiale: Jersey</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary class="m-v">
+                                Anmeldelser
+                                <ul class="m-v-ul-r">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li>32</li>
+                                </ul>
+                            </summary>
+                            <article class="m-v-r">
+                                <p class="review-name">Fornavn Etternavn</p>
+                                    <ul class="m-v-ul-r">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-regular fa-star"></i></li>
+                                        <li><i class="fa-regular fa-star"></i></li>
+                                    </ul>
+                                <p class="review-text">Nam libero tempore, cum soluta nobis est eligendi
+                                optio cumque nihil impedit quo minus id quod maxime.</p>
+                            </article>
+                        </details>
                     </section>
                 </aside>
 
                 <section id="recomended-scroll">
+                    <h3 id="rec-title">Lignende produkter</h3>
+                    <a href=# id="rec-link">Se lignende produkter <i class="fa-solid fa-arrow-right"></i></a> 
+                    <div class="rec-scroll-container">
+                            <article class="rec-card">
+                                <a href="#">
+                                    <i class="fa-regular fa-heart heart hover-red"></i>
+                                </a>
+                                <img src="https://picsum.photos/290/290" class="product-photo" alt="populær produkt kategori">
+                                    <ul class="product-description">
+                                        <li><p class="product-name">Product name</p></li>
+                                        <li><p class="price">Kr 1999</p></li>
+                                    </ul>
+                                <ul class="rec-review">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><p> 842 Reviews</p></li>
+                                </ul>
+                            </article>
+
+                            <article class="rec-card">
+                                <a href="#">
+                                    <i class="fa-regular fa-heart heart hover-red"></i>
+                                </a>
+                                <img src="https://picsum.photos/290/290" class="product-photo" alt="populær produkt kategori">
+                                    <ul class="product-description">
+                                        <li><p class="product-name">Product name</p></li>
+                                        <li><p class="price">Kr 1999</p></li>
+                                    </ul>
+                                <ul class="rec-review">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><p> 842 Reviews</p></li>
+                                </ul>
+                            </article>
+
+                            <article class="rec-card">
+                                <a href="#">
+                                    <i class="fa-regular fa-heart heart hover-red"></i>
+                                </a>
+                                <img src="https://picsum.photos/290/290" class="product-photo" alt="populær produkt kategori">
+                                    <ul class="product-description">
+                                        <li><p class="product-name">Product name</p></li>
+                                        <li><p class="price">Kr 1999</p></li>
+                                    </ul>
+                                <ul class="rec-review">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><p> 842 Reviews</p></li>
+                                </ul>
+                            </article>
+
+                            <article class="rec-card">
+                                <a href="#">
+                                    <i class="fa-regular fa-heart heart hover-red"></i>
+                                </a>
+                                <img src="https://picsum.photos/290/290" class="product-photo" alt="populær produkt kategori">
+                                    <ul class="product-description">
+                                        <li><p class="product-name">Product name</p></li>
+                                        <li><p class="price">Kr 1999</p></li>
+                                    </ul>
+                                <ul class="rec-review">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><p> 842 Reviews</p></li>
+                                </ul>
+                            </article>
+
+                            <article class="rec-card">
+                                <a href="#">
+                                    <i class="fa-regular fa-heart heart hover-red"></i>
+                                </a>
+                                <img src="https://picsum.photos/290/290" class="product-photo" alt="populær produkt kategori">
+                                    <ul class="product-description">
+                                        <li><p class="product-name">Product name</p></li>
+                                        <li><p class="price">Kr 1999</p></li>
+                                    </ul>
+                                <ul class="rec-review">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><p> 842 Reviews</p></li>
+                                </ul>
+                            </article>
+
+                            <article class="rec-card">
+                                <a href="#">
+                                    <i class="fa-regular fa-heart heart hover-red"></i>
+                                </a>
+                                <img src="https://picsum.photos/290/290" class="product-photo" alt="populær produkt kategori">
+                                    <ul class="product-description">
+                                        <li><p class="product-name">Product name</p></li>
+                                        <li><p class="price">Kr 1999</p></li>
+                                    </ul>
+                                <ul class="rec-review">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><p> 842 Reviews</p></li>
+                                </ul>
+                            </article>
+                    </div>    
                 </section>
             </div>
         </main>
