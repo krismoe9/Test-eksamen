@@ -1867,6 +1867,8 @@ Border radius: 25px;
     }
     
     #rec-nav{
+        margin-top: 25px;
+        padding: 20px 0px;
         display: flex;
         justify-content: space-between;
     }
