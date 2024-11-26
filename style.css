@@ -2095,6 +2095,7 @@ Border radius: 25px;
         display: flex;
         flex-wrap: wrap;
         justify-content: start;
+
         
     }
 
@@ -2149,9 +2150,8 @@ Border radius: 25px;
         list-style: none;
         margin: 5px 10px;
         padding: 0;
-        display: flex;
+        align-self: flex-start;
         flex-direction: column;
-        align-self: flex-end;
 
         i{
         padding: 5px;
