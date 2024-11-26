@@ -953,6 +953,11 @@ table, th, td{
     max-width: 95vw;
 }
 
+#rec-nav{
+    margin-top: 25px;
+    padding: 20px 0px;
+}
+
 .rec-title{
     font-size: 35px;
 }
