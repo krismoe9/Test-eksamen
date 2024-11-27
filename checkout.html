@@ -36,7 +36,7 @@
         <main>
             <div id="p-c-container">
             <header id="c-header">
-                <a href=# id="back-link"><i class="fa-solid fa-arrow-left"></i> Fortsett å handle</i></a> 
+                <a href="index.html" id="back-link"><i class="fa-solid fa-arrow-left"></i> Fortsett å handle</i></a> 
                 <h2>Kasse</h2>
             </header>
             <section class="cart-items">
@@ -136,7 +136,29 @@
 
 
             <section class="customer-info">
+                <h2>Leveringsadresse</h2>
+                 <form>
+                    <label for="fname">Fornavn:</label><br>
+                     <input type="text" id="fname" name="fname" value="Kari"><br>
+                    <label for="lname">Etternavn:</label><br>
+                     <input type="text" id="lname" name="lname" value="Normann"><br>
+                    <label for="adress">Adresse:</label><br>
+                     <input type="text" id="adress" name="adress" value="B R A veien 4"><br>
+                    <label for="zipcode">Postnummer:</label><br>
+                     <input type="number" id="zipcode" name="zipcode" value="1752"><br>
+                    <label for="location">Sted:</label><br>
+                     <input type="text" id="location" name="location" value="Halden"><br>
+                 </form>
 
+                <h4>Kontaktinformasjon</h4>
+                 <form>
+                    <label for="email">Epost:</label><br>
+                     <input type="email" id="email" name="email" value="karinormann@epost.no"><br>
+                    <label for="phone">Telefon:</label><br>
+                     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" value="+ 47 987 65 432"><br>
+                     <button class="p-btn c-btn" type="submit">Lagre</button>
+                     <a href=# id="abort-btn">Avbryt</a>
+                 </form>
             </section>
 
             <section class="delivery-details">
