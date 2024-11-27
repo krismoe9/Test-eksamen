@@ -1085,7 +1085,6 @@ table, th, td{
 }
 
 .cart-items{
-    /*border: 1px solid rgb(223, 223, 223);*/
     display: grid;
     grid-row: auto auto auto auto;
 
@@ -1208,6 +1207,9 @@ table, th, td{
     }
 }
 
+.customer-info{
+
+}
 
 /* ######################################################################### NETTBRETT ################################################################### */
 
