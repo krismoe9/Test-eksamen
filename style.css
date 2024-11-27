@@ -122,7 +122,49 @@ input{
     transform: scale(1.2); /*1 betyr nåværende størrelse, så den vokser x0.1*/
   }
 
+/*
+.r-banner{
+    background-image: url("https://picsum.photos/id/44/200/300");
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    position:relative;
+    height: 32rem;
+    border-radius: 20px;
+    padding: 35px;
+    margin: 5px;
+}
 
+.test-test{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+.r-ca{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  width: 140px;
+  padding: 0;
+  margin: 0;
+  gap: 5px;
+}
+
+
+
+.r-na{
+
+}
+
+.r-ta{
+
+}
+
+  
+/*
 #banner{
     background-image: url("https://picsum.photos/id/44/200/300");
     background-size: cover;
@@ -176,6 +218,7 @@ input{
     font-weight: bold;
     font-size: 10px;
 }
+*/
 
 .popular-container{
     display: grid;
@@ -1748,38 +1791,78 @@ Border radius: 25px;
         grid-row: 2/3;
     }
 
-    #banner{
+
+    .r-banner{
+        display: flex; 
+        overflow-x: scroll; /*-bildene går utenfor rammen-*/
+        scroll-behavior: smooth;  /*-umiddelbar respons på scrolling-*/
+        white-space: nowrap; /*-går utenfor rammen- margin: 10px;*/
+        gap: 10px;
+        padding: 0 0 30px 0;
+        height: auto;
+        width: 100%;
+        
+    }
+
+    .r-ca{
         display: flex;
+        flex-direction: column;
+        max-width: 1189px;
+        min-width: 1200px;
         height: 450px;
-        margin: 25px 0px 0px;
-        border-radius: 25px;
-
+        border: 1px solid rgb(234, 234, 234);
+        border-radius: 20px;
+        padding: 15px;
+        white-space: wrap;
+        background-image: url(https://picsum.photos/200/300);
+        background-size: cover;
+        align-items: end;
     }
+    
 
-    .banner-container{
+    .test-test{
         display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 5px;
+        width: 40%;
+        height: 100%;
         justify-content: center;
-        align-content: space-between;
-        width: 400px;
-        padding: 0;
-        margin: 0;
+     } 
+
+        .r-na{
+            margin: 7px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: end;
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        .r-ta{
+            margin: 10px;
+            word-wrap: break-word;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: end;
+        }
+
+        .r-la{
+            justify-content: flex-end;
+            color: black;
+            background-color: #fff;
+            border-radius: 42px;
+            padding: 11px;
+            width: 70px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 10px;
+        }
     }
 
-    
-    .banner-container-item{
-        margin: 10px;
-    }
-    
-    #banner-title{
-        font-size: 34px;
-        font-weight: bold;
 
-    }
-
-
-    #banner-info{
-    font-size: 15px;
-    }
 
     .popular-container{
         display: grid;
@@ -2451,4 +2534,4 @@ Border radius: 25px;
     }
 
 
-}
+
