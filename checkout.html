@@ -23,8 +23,8 @@
                     <li><a href="index.html" class="nav-info">Hjem</a></li>
                     <li><a href="product.html" class="nav-info">Produkter</a></li>
                     <li><a href="index.html" class="logo">Logo</a></li>
-                    <li><a href="#category" class="nav-info">Kategorier</a></li>
-                    <li><a href="#contact" class="nav-info">Kontakt oss</a></li>
+                    <li><a href="index.html#category" class="nav-info">Kategorier</a></li>
+                    <li><a href="index.html#footer" class="nav-info">Kontakt oss</a></li>
                 </ul>
                 <ul class="ikoner">
                     <li><a href="index.html"><i class="fa-regular fa-user fas hover-grow"></i></a></li>
@@ -40,7 +40,7 @@
                     <h2>Kasse</h2>
                 </header>
                     <section class="cart-items a-b-c">
-                        <h3>1. Shoppingbagen din</h3>
+                     <h3 class="h3">1. Shoppingbagen din</h3>
                         <article class="cart-card c-c-1">
                             <img src="https://picsum.photos/290/290" class="c-prod-photo" alt="picture of product">
                             <section class="c-test">
@@ -52,7 +52,7 @@
                                 <section class="c-options">
                                 <form class="c-size-form">
                                     <label>Størrelse</label>
-                                    <select class="c-size" name="c-size">
+                                    <select class="c-size">
                                         <option value="extra-small">XS</option>
                                         <option value="small">S</option>
                                         <option value="medium">M</option>
@@ -122,7 +122,7 @@
                                         <option value="extra-large">XL</option>
                                     </select>
                                 </form>
-                                <form class="c-number" action="/action_page.php">
+                                <form class="c-number">
                                     <label>Antall:</label>
                                     <input type="number" class="c-quantity" min="1" max="99">
                                 </form>
@@ -138,82 +138,93 @@
 
                     
                     <section class="customer-info a-b-c">
-                        <h3>Leveringsadresse</h3>
-                        <form>
+                        <h3 class="h3">2. Dine opplysninger</h3>
+                        <p>Leveringsadresse</p>
+                        <form class="ci-a">
                             <label>Fornavn:</label>
-                            <input type="text" id="fname"  value="Kari">
+                            <input type="text" class="fname ci-ab"  value="Kari*">
 
                             <label >Etternavn:</label>
-                            <input type="text" id="lname" value="Normann">
+                            <input type="text" class="lname ci-ab" value="Normann*">
 
                             <label>Adresse:</label>
-                            <input type="text" id="adress" value="B R A veien 4">
+                            <input type="text" class="adress ci-ab" value="B R A veien 4*">
 
                             <label>Postnummer:</label>
-                            <input type="number" id="zipcode" value="1752">
+                            <input type="number" class="zipcode ci-ab" value="1752*">
 
                             <label >Sted:</label>
-                            <input type="text" id="location" value="Halden">
+                            <input type="text" class="location ci-ab" value="Halde*">
                         </form>
 
                         <h3>Kontaktinformasjon</h3>
-                        <form>
+                        <form class="ci-a">
                             <label>Epost:</label>
-                            <input type="email" id="email" value="karinormann@epost.no">
+                            <input type="email" class="email ci-ab" value="karinormann@epost.no">
 
                             <label>Telefon:</label>
-                            <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" value="+ 47 987 65 432">
+                            <input type="tel" class="phone ci-ab" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" value="+ 47 987 65 432">
 
                             <button class="p-btn c-btn" type="submit">Lagre</button>
-                            <a href=# id="abort-btn">Avbryt</a>
+                            <a href="product.html" id="cancel-btn">Avbryt</a>
                         </form>
                     </section>
 
 
 
                     <section class="delivery-details a-b-c">
-                    <h3>Leveringsvalg</h3>
+                      <h3 class="h3 h-d-1">3. Levering</h3>
+                        <h4 class="h4 h-d-2">Leveringsvalg</h4>
                             <form>
-                                <input type="radio" id="express" value="Ekspress Hjemlevering">
-                                <label>Ekspress Hjemlevering</label>
-                                <ul>
-                                    <li>3-4 virkedager</li>
-                                    <li>59 kr ikon</li>
-                                    <li>bestill hver dag før kl. 8:00* for levering neste arbeidsdag.
-                                    Leveres hjem til deg før frokost mandag til lørdag. *For levering til 
-                                    postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 	
-                                    8000-9999er leveringstiden 3 arbeidsdager</li>
-                                </ul>
+                                <fieldset class="field-delivery f-d-1">
+                                    <input type="radio" id="express" name="option" value="Ekspress Hjemlevering">
+                                    <label>Ekspress Hjemlevering</label>
+                                    <ul>
+                                        <li class="d-d-time">3-4 virkedager</li>
+                                        <li class="d-d-price">59 kr ikon<i class="fa-solid fa-truck-fast"></i></li>
+                                        <li class="d-d-info">
+                                            bestill hver dag før kl. 8:00* for levering neste arbeidsdag.
+                                            Leveres hjem til deg før frokost mandag til lørdag. *For levering til 
+                                            postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 	
+                                            8000-9999 er leveringstiden 3 arbeidsdager
+                                        </li>
+                                    </ul>
+                                </fieldset>
                                 
-                                <input type="radio" id="express-utlevering" value="Ekspress utlevering">
-                                <label>Ekspresspakke til utleveringssted</label>
-                                <ul>
-                                    <li>1-4 virkedager</li>
-                                    <li>59 kr ikon</li>
-                                </ul>
-                                
-                                <input type="radio" id="standard" value="Standard">
-                                <label>Standard hjemlevering</label>
-                                <ul>
-                                    <li>5-8 virkedager</li>
-                                    <li>Gratis</li>
-                                    <li>Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager</li>
-                                </ul>
+                                <fieldset class="field-delivery f-d-2">
+                                    <input type="radio" id="express-utlevering" name="option" value="Ekspress utlevering">
+                                    <label>Ekspresspakke til utleveringssted</label>
+                                    <ul>
+                                        <li class="d-d-time">1-3 virkedager</li>
+                                        <li class="d-d-price">59 kr<i class="fa-brands fa-dhl"></i></li>
+                                    </ul>
+                                </fieldset>
+
+                                <fieldset class="field-delivery f-d-3">
+                                    <input type="radio" id="standard" name="option" value="Standard">
+                                    <label>Standard hjemlevering</label>
+                                    <ul>
+                                        <li class="d-d-time">5-8 virkedager</li>
+                                        <li class="d-d-price">Gratis<i class="fa-solid fa-box"></i></li>
+                                        <li class="d-d-info">Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager</li>
+                                    </ul>
+                                </fieldset>
                             </form> 
                     </section>
 
 
 
                     <section class="payment-details a-b-c">
-                        <h3>Betaling</h3>
-                            <form>
+                      <h3 class="h3">4. Betaling</h3>
+                       <h4 class="h4">Betaling med kort</h4>
+                        <form>
                             <label>Kortnummer</label>
                             <input type="number" id="cardnumber" value="1234567890" min="1" max="999999999999">
                             <label>Utløpsdato</label>    
                             <input type="date" id="expiration">
                             <label>CVC</label>
                             <input type="text" id="cvc">
-                            </form>
+                        </form>
                     </section>
            </div>
         </main>
