@@ -1230,10 +1230,6 @@ table, th, td{
 
 
 .ci-a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
     margin-bottom: 3rem;
 
     label{
@@ -1245,6 +1241,12 @@ table, th, td{
         justify-content: center;
         align-content: center;
     }
+}
+
+span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ci-ab{
@@ -2235,10 +2237,14 @@ Border radius: 25px;
         }
     }
 
+    .a-b-c{
+        padding: 9rem;
+    }
+
     .cart-card{
         display: flex;
         flex-direction: row;
-        padding: 2rem 4rem;
+        padding: 2rem 0rem;
         margin: 0;
         align-items: center;
 
@@ -2332,7 +2338,64 @@ Border radius: 25px;
         }
     }
 
+    .field-delivery{
+        margin: 1rem 0px;
+    }
 
 
+
+    .ci-a{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        
+        span{
+            width: calc(50% - 2px)
+        }
+
+    }
+
+
+
+    #span1{
+        margin-right: 4px;
+    }
+
+    #span3{
+        width: 100%;
+    }
+
+    #span4{
+        margin-right: 4px;
+    }
+
+    #span6{
+        margin-right: 4px; 
+    }
+
+
+    /*
+    .fname{
+        width: 50%;
+    }
+
+    .lname{
+        width: 50%;
+
+    }
+
+    .adress{
+        width: 100%;
+    }
+
+    .zipcode{
+        width: 50%;
+    }
+
+    .location{
+        width: 50%;
+    }
+        */
 
 }
