@@ -1080,8 +1080,12 @@ table, th, td{
         }
 }
 
-.cart-items{
+.a-b-c{
     border: 1px solid rgb(223, 223, 223);
+}
+
+.cart-items{
+    /*border: 1px solid rgb(223, 223, 223);*/
     display: grid;
     grid-row: auto auto auto auto;
 
