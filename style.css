@@ -45,9 +45,7 @@ header{
 
 }
 
-.nav-info:hover{
-    text-decoration: underline;
-}
+
 
 .nav-info{
     list-style: none;
@@ -113,26 +111,108 @@ input{
     }
 }
 
-/* NB! Hover vil ikke aktiveres på mobilskjermer! */
-.hover-grow { 
-    transition: all .2s ease-in-out; /* 2s er hastigheten på overgangen*/
-  }
+/*
+.main-index{
+    display: flex;
+    flex-direction: column;
+}*/
 
-.hover-grow:hover { 
-    transform: scale(1.2); /*1 betyr nåværende størrelse, så den vokser x0.1*/
-  }
+
+  .r-banner{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    /*white-space: nowrap;*/
+    gap: 10px;
+    padding: 0 0 30px 0;
+    /*height: auto;*/
+    /*width: 100%;*/
+    
+}
+
+
+.r-ca{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    max-height: 450px;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 20px;
+    padding: 15px;
+    white-space: wrap;
+    align-items: end;
+}
+
+.c-1{
+    background-image: url(https://picsum.photos/200/300);
+    background-size: cover;
+}
+
+.c-2{
+    display: none;
+    background-image: url(https://picsum.photos/200/300?grayscale);
+    background-size: cover;
+}
+
+.c-3{
+    display: none;
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    background-size: cover;
+}
+
+
+.test-test{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+    width: 60%;
+    height: 100%;
+    justify-content: center;
+ } 
+
+    .r-na{
+        margin: 7px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: end;
+        font-size: 34px;
+        font-weight: bold;
+    }
+
+    .r-ta{
+        margin: 10px;
+        word-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: end;
+    }
+
+    .r-la{
+        justify-content: flex-end;
+        color: black;
+        background-color: #fff;
+        border-radius: 42px;
+        padding: 11px;
+        width: 70px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 10px;
+    }
+
 
 /*
 .r-banner{
-    background-image: url("https://picsum.photos/id/44/200/300");
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    position:relative;
-    height: 32rem;
-    border-radius: 20px;
-    padding: 35px;
-    margin: 5px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  height: 32rem;
+  border-radius: 20px;
+  padding: 35px;
+  margin: 5px;
 }
 
 .test-test{
@@ -284,9 +364,7 @@ input{
     margin: 5px;
 }
 
-.knapp:hover{
-    background-color: rgba(123, 123, 123, 0.4);
-}
+
 
 main{
     grid-row: 2/3;
@@ -461,9 +539,7 @@ main{
 
 }
 
-.hover-red:hover{
-    background-color: rgba(171, 0, 0, 0.4);
-}
+
 
 
 .product-photo{
@@ -637,9 +713,9 @@ main{
 
 .review-scroll-container{
     display: flex; 
-    overflow-x: scroll; /*-bildene går utenfor rammen-*/
-    scroll-behavior: smooth;  /*-umiddelbar respons på scrolling-*/
-    white-space: nowrap; /*-går utenfor rammen- margin: 10px;*/
+    overflow-x: scroll; 
+    scroll-behavior: smooth;  
+    white-space: nowrap; 
     gap: 10px;
     padding: 0 0 30px 0;
     height: 100%;
@@ -783,6 +859,11 @@ footer{
 .list-details{
     font-weight: bolder;
 
+}
+
+footer{
+    width: 100%;
+    overflow: hidden;
 }
 
 .footer-list{
@@ -961,9 +1042,7 @@ footer{
 }
 
 
-#h-btn:hover{
-    color: red;
-}
+
 
 details{
     border-top: 1px solid black;
@@ -1422,146 +1501,11 @@ table, th, td{
 
 
 @media only screen and (min-width: 650px) and (max-width: 1050px){
-/*
-    .popular-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.25fr 0.1fr 0.25fr 1fr 1fr 1fr;
-        gap: 15px;
-    }
-    
 
-    #popular-title{
-        grid-column: 1/3;
-        grid-row: 1/2;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        font-size: 40px;
-        margin: 13px 0px 0px 0px;
-    }
-    
-    #popular-undertitle{
-        grid-column: 1/3;
-        grid-row: 2/3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 18px;
-        font-weight: lighter;
+    .nav-info:hover{
+        text-decoration: underline;
     }
 
-    .btn{
-        grid-column: 1/3;
-        grid-row: 3/4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0px 0px 25px 0px;
-        list-style: none;
-    }
-
-    .knapp{
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-        background-color: white;
-        border-radius: 43px;
-        border: 1px solid black;
-        padding: 15px;
-        width: 150px;
-        font-size: 15px;
-        margin: 5px;
-    }
-
-    .new-prod{
-        background-color: black;
-        color:#fff;
-        text-decoration: none;
-        border-radius: 43px;
-        border: 1px solid black;
-        padding: 15px;
-        width: 150px;
-        font-size: 15px;
-        margin: 5px;
-    }
-
-    .popular-productcard1{
-        grid-column: 1/2;
-        grid-row: 4/5;
-        margin: 0px 0px 10px 0px;
-    }
-    
-    .popular-productcard2{
-        grid-column: 2/3;
-        grid-row: 4/5;
-        margin: 0px 0px 10px 0px;
-    }
-
-    .popular-productcard3{
-        grid-column: 1/2;
-        grid-row: 5/6;
-        margin: 0px 0px 10px 0px;
-    }
-
-    .popular-productcard4{
-        grid-column: 2/3;
-        grid-row: 5/6;
-        margin: 0px 0px 10px 0px;
-    }
-
-    .popular-productcard5{
-        grid-column: 1/2;
-        grid-row: 6/7;
-        margin: 0px 0px 10px 0px;
-    }
-
-    .popular-productcard6{
-        grid-column: 2/3;
-        grid-row: 6/7;
-        margin: 0px 0px 10px 0px;
-    }
-
-    
-    .product-photo{
-        border-radius: 25px;
-        width: 100%;
-        margin: 0px 0px 1px 0px;
-    }
-
-    .product-description{
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0px 3px;
-        margin: 0;
-    }
-
-    .product-name{
-        font-weight: bold;
-        font-size: 18px;
-    }
-
-    .review{
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px 3px;
-
-        i{
-            margin: 1px;
-        }
-
-        p{
-            margin: 0px;
-            padding: 0px 7px;
-            font-weight: bold;
-        }
-    }*/
 
     .category-container{
         display: grid;
@@ -1731,6 +1675,10 @@ Border radius: 25px;
         }
     }
 
+    .nav-info:hover{
+        text-decoration: underline;
+    }
+
     .search{
         display: flex;
         flex-direction: row;
@@ -1794,15 +1742,16 @@ Border radius: 25px;
 
     .r-banner{
         display: flex; 
-        overflow-x: scroll; /*-bildene går utenfor rammen-*/
-        scroll-behavior: smooth;  /*-umiddelbar respons på scrolling-*/
-        white-space: nowrap; /*-går utenfor rammen- margin: 10px;*/
+        overflow-x: scroll; 
+        scroll-behavior: smooth; 
+        white-space: nowrap;
         gap: 10px;
         padding: 0 0 30px 0;
         height: auto;
         width: 100%;
         
     }
+
 
     .r-ca{
         display: flex;
@@ -1814,9 +1763,22 @@ Border radius: 25px;
         border-radius: 20px;
         padding: 15px;
         white-space: wrap;
+        align-items: end;
+    }
+
+    .c-1{
         background-image: url(https://picsum.photos/200/300);
         background-size: cover;
-        align-items: end;
+    }
+
+    .c-2{
+        background-image: url(https://picsum.photos/200/300?grayscale);
+        background-size: cover;
+    }
+
+    .c-3{
+        background-image: url(https://picsum.photos/seed/picsum/200/300);
+        background-size: cover;
     }
     
 
@@ -1892,6 +1854,10 @@ Border radius: 25px;
         font-weight: lighter;
     }
 
+    .hover-red:hover{
+        background-color: rgba(171, 0, 0, 0.4);
+    }
+
     .btn{
         grid-column: 1/4;
         grid-row: 3/4;
@@ -1900,6 +1866,10 @@ Border radius: 25px;
         align-items: center;
         margin: 0px 0px 25px 0px;
         list-style: none;
+    }
+
+    #h-btn:hover{
+        color: red;
     }
 
     .knapp{
@@ -1911,6 +1881,10 @@ Border radius: 25px;
         width: 150px;
         font-size: 15px;
         margin: 5px;
+    }
+
+    .knapp:hover{
+        background-color: rgba(123, 123, 123, 0.4);
     }
 
     .popular-productcard1{
@@ -2109,9 +2083,9 @@ Border radius: 25px;
 
     .review-scroll-container{
         display: flex; 
-        overflow-x: scroll; /*-bildene går utenfor rammen-*/
-        scroll-behavior: smooth;  /*-umiddelbar respons på scrolling-*/
-        white-space: nowrap; /*-går utenfor rammen- margin: 10px;*/
+        overflow-x: scroll; 
+        scroll-behavior: smooth;
+        white-space: nowrap;
         gap: 10px;
         padding: 0 0 30px 0;
         height: 100%;
@@ -2129,8 +2103,6 @@ Border radius: 25px;
         border-radius: 25px;
         padding: 15px;
         white-space: wrap;
-
-      
 
         img{
             border-radius: 50%;
@@ -2393,10 +2365,6 @@ Border radius: 25px;
 
     .c-test{
         width: 100%;
-        /*display: flex;
-        flex-wrap: wrap;
-        justify-content: start;*/
-
         display: grid;
         grid-template-columns: 1fr auto;
         grid-template-rows: auto auto;
